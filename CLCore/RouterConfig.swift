@@ -13,7 +13,7 @@ enum RouterOpenType {
     case present
 }
 
-open struct Router {
+public struct Router {
     var routerUrl : String
     var routerVC : String
     var openType : RouterOpenType
