@@ -13,14 +13,14 @@ enum RouterOpenType {
     case present
 }
 
-public struct Router {
+open struct Router {
     var routerUrl : String
     var routerVC : String
     var openType : RouterOpenType
     var needToValidataToken : Bool = false
 }
 
-public class RouterConfig {
+open class RouterConfig {
     static let instance = RouterConfig()
     var routers : [String:Router] = [:]
 }
