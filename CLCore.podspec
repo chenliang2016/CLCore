@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name = 'CLCore'
-  s.version = '1.0.0'
+  s.version = '1.0.2'
   s.license = 'MIT'
   s.summary = 'CL frame core method'
   s.homepage = 'http://chenliang2016.github.io/'
