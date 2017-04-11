@@ -13,24 +13,24 @@ enum RouterOpenType {
     case present
 }
 
-struct Router {
+public struct Router {
     var routerUrl : String
     var routerVC : String
     var openType : RouterOpenType
     var needToValidataToken : Bool = false
 }
 
-class RouterConfig {
+public class RouterConfig {
     static let instance = RouterConfig()
     var routers : [String:Router] = [:]
 }
 
 extension RouterConfig {
-    func initRouter(routers : [String:Router]) {
+    public func initRouter(routers : [String:Router]) {
         self.routers = routers
     }
     
-    func getRouterFromKey(routerKey:String) -> Router? {
+    public func getRouterFromKey(routerKey:String) -> Router? {
         return RouterConfig.instance.routers[routerKey]
     }
 }
